@@ -27,6 +27,9 @@ Primary and foreign keys are used to enforce relationships between tables.
 - Grouping and sorting
 - Subqueries
 - Business-focused query logic
+- Common Table Expressions (CTEs)
+- Window functions (RANK, LAG, running totals)
+
 
 ## Files in This Repository
 - schema.sql – Database table creation scripts
