@@ -1,32 +1,39 @@
 # Sales Database Analysis (SQL)
 
 ## Project Overview
-This project demonstrates the use of SQL to analyze sales data stored in a relational database. 
-The analysis focuses on revenue trends, product performance, customer behavior, and regional sales insights 
-to support business reporting and decision-making.
+This project demonstrates how SQL can be used to analyze sales data stored in a relational database.
+The analysis focuses on identifying revenue trends, understanding customer behavior, evaluating product performance,
+and supporting business reporting and decision-making.
 
-## Database Structure
-The database consists of the following tables:
-
-- customers (customer_id, customer_name, region)
-- products (product_id, product_name, category)
-- orders (order_id, customer_id, order_date)
-- order_details (order_id, product_id, quantity, revenue)
-
-## Key Business Questions Answered
+## Business Questions Answered
 - Which regions generate the highest revenue?
-- What are the monthly sales trends?
-- Which products contribute the most to total revenue?
+- How does sales performance change over time?
+- Which products contribute the most to revenue?
 - How much revenue does each customer generate?
 - What is the average order value?
 
-## Skills Demonstrated
-- SQL joins (INNER JOIN)
+## Database Design
+The database follows a normalized relational structure and consists of:
+- customers
+- products
+- orders
+- order_details
+
+Primary and foreign keys are used to enforce relationships between tables.
+
+## Key SQL Techniques Used
+- Multi-table joins
 - Aggregations (SUM, AVG, COUNT)
-- Grouping and filtering
+- Grouping and sorting
 - Subqueries
-- Business-focused data analysis
+- Business-focused query logic
 
 ## Files in This Repository
 - schema.sql – Database table creation scripts
-- analysis_queries.sql – SQL queries used for analysis
+- analysis_queries.sql – SQL queries used to answer business questions
+
+## Use Case
+The queries in this repository can support:
+- Sales performance reporting
+- Management dashboards
+- Business intelligence analysis
